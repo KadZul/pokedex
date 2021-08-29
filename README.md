@@ -27,6 +27,13 @@
 #### Задача 2
 - Создаём `async` метод `getPokemonData(id: number)` описываем интерфейс response.data на основе API.
 - При открытии главной страницы отображаем 20 покемонов с их спрайтами и типом. Во время загрузки спрайта отображаем прелоадер.
-- Внизу страницы показываем кнопку "Загрузить ещё", во время обмена данными с сервером API и загрузки спрайтов - кнопка не активна.
-:page_with_curl: [useState](https://learn-reactjs.ru/core/hooks/state-hook)
-:page_with_curl: [useEffect](https://learn-reactjs.ru/core/hooks/effect-hook)
+- Внизу страницы показываем кнопку "Загрузить ещё", во время обмена данными с сервером API и загрузки спрайтов - кнопка не активна. <br>
+:page_with_curl: [useState](https://learn-reactjs.ru/core/hooks/state-hook) <br>
+:page_with_curl: [useEffect](https://learn-reactjs.ru/core/hooks/effect-hook) <br>
+
+#### Задача 3
+- Подключаем `Redux` `yarn add redux react-redux @reduxjs/toolkit`
+- Создаём стор средствами `Redux Toolkit`, создаём слайс pokemons.ts, добавляем метод addPokemon(), сохраняющий покемошку в стор.
+- Средствами createAsyncThunk получаем с помощью API покемона по его ID `https://pokeapi.co/api/v2/pokemon/{id}` и сохраняем данные в стор, обрабатываем ошибки, сохраняем данные об ошибке в стор `error: string` <br>
+[RTK](https://redux.js.org/tutorials/quick-start) <br>
+[createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) <br>
