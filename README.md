@@ -10,7 +10,7 @@
 
 ### Этап 1
 #### Задача 0
-- Клонируем репозиторий `git@github.com:Krakazybik/pokedex.git`
+- Форкаем `git@github.com:Krakazybik/pokedex.git`
 - Внимание! <b>В проекте используется `yarn`</b> Устанавливаем все зависимости. `yarn` или `yarn install`
 - Настраиваем `ESLint` на автоматическое исправление с использованием конфига `.eslintrc.json`
 - Каждый этап выполняется в отдельной ветке с префиксом `feature-`. Пример: `feature-pokeapi`. Для переключения на другую ветку используем `git checkout -b feature-pokeapi`.
