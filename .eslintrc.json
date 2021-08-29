@@ -1,7 +1,6 @@
 {
     "plugins": [
         "@typescript-eslint",
-        "prettier",
         "jsx-a11y",
         "react-hooks"
     ],
@@ -10,9 +9,7 @@
         "airbnb/hooks",
         "airbnb-typescript",
         "plugin:@typescript-eslint/recommended",
-        "plugin:prettier/recommended",
-        "plugin:jsx-a11y/recommended",
-        "prettier"
+        "plugin:jsx-a11y/recommended"
     ],
 
     "parserOptions": {
@@ -33,11 +30,6 @@
         "react/prop-types": "off",
         "no-debugger": "off",
         "no-console": 0,
-        "prettier/prettier": [
-            "warn", {
-                "semi": false
-            }
-        ],
         "jsx-a11y/label-has-associated-control": [ "error", {
             "required": {
                 "some": [ "nesting", "id"  ]
