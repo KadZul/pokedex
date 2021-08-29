@@ -13,14 +13,14 @@
 - Клонируем репозиторий `git@github.com:Krakazybik/pokedex.git`
 - Внимание! <b>В проекте используется `yarn`</b> Устанавливаем все зависимости. `yarn` или `yarn install`
 - Настраиваем `ESLint` на автоматическое исправление с использованием конфига `.eslintrc.json`
-- Каждое этап выполняется в отдельной ветке с префиксом `feature-`. Пример: `feature-pokeapi`. Для переключения на другую ветку используем `git checkout -b feature-pokeapi`.
+- Каждый этап выполняется в отдельной ветке с префиксом `feature-`. Пример: `feature-pokeapi`. Для переключения на другую ветку используем `git checkout -b feature-pokeapi`.
 
 #### Задача 1
 - Создаём файл /src/api/pokeapi.ts в котором описываем класс PokeAPI.
 - Работу с `REST API` осуществляем с помощью библиотеки `axios`.
 - Созадём `async` метод
   `getPokemons(limit = 20)`
-  возвращающией объект с пачкой покемоенов и сохраняющий offset из строки с ссылкой на следующий поиск в свойство `offset`
+  возвращающией объект с пачкой покемоенов и сохраняем offset из строки с ссылкой на следующий поиск в свойство `offset`
 - При повторном вызове метода `getPokemons()` возвращает пачку со смещением на offset
 - Описываем все необходимые типы, ипользование `any` не допускается.
 
@@ -34,6 +34,6 @@
 #### Задача 3
 - Подключаем `Redux` `yarn add redux react-redux @reduxjs/toolkit`
 - Создаём стор средствами `Redux Toolkit`, создаём слайс pokemons.ts, добавляем метод addPokemon(), сохраняющий покемошку в стор.
-- Средствами createAsyncThunk получаем с помощью API покемона по его ID `https://pokeapi.co/api/v2/pokemon/{id}` и сохраняем данные в стор, обрабатываем ошибки, сохраняем данные об ошибке в стор `error: string` <br>
+- Средствами `createAsyncThunk` получаем с помощью API покемона по его ID `https://pokeapi.co/api/v2/pokemon/{id}` и сохраняем данные в стор, обрабатываем ошибки, сохраняем данные об ошибке в стор `error: string` <br>
 :page_with_curl: [RTK](https://redux.js.org/tutorials/quick-start) <br>
 :page_with_curl: [createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) <br>

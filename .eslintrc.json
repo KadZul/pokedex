@@ -35,7 +35,6 @@
         "no-console": 0,
         "prettier/prettier": [
             "warn", {
-                "singleQuote": true,
                 "semi": false
             }
         ],
