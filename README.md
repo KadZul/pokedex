@@ -35,5 +35,5 @@
 - Подключаем `Redux` `yarn add redux react-redux @reduxjs/toolkit`
 - Создаём стор средствами `Redux Toolkit`, создаём слайс pokemons.ts, добавляем метод addPokemon(), сохраняющий покемошку в стор.
 - Средствами createAsyncThunk получаем с помощью API покемона по его ID `https://pokeapi.co/api/v2/pokemon/{id}` и сохраняем данные в стор, обрабатываем ошибки, сохраняем данные об ошибке в стор `error: string` <br>
-[RTK](https://redux.js.org/tutorials/quick-start) <br>
-[createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) <br>
+:page_with_curl: [RTK](https://redux.js.org/tutorials/quick-start) <br>
+:page_with_curl: [createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) <br>
